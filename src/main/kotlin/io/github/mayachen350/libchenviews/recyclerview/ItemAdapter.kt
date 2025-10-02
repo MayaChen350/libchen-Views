@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews
+package io.github.mayachen350.libchenviews.recyclerview
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil

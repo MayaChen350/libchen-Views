@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews
+package io.github.mayachen350.libchenviews.activity.navdrawer
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -14,9 +14,10 @@ import ca.cegepmontpetit.cem6222816.tp3_4n6.ConnexionActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.CreationActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.PersistentSessionData
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.RetrofitUtil
-import io.github.mayachen350.libchenviews.utils.DefaultCallback
-import io.github.mayachen350.libchenviews.utils.httpRequestWithLoading
+import io.github.mayachen350.libchenviews.http.DefaultCallback
 import com.google.android.material.navigation.NavigationView
+import io.github.mayachen350.libchenviews.R
+import io.github.mayachen350.libchenviews.activity.BaseActivity
 import retrofit2.Call
 import retrofit2.Response
 

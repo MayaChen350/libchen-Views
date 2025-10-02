@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews.utils
+package io.github.mayachen350.libchenviews.http
 
 import retrofit2.Call
 import retrofit2.Callback

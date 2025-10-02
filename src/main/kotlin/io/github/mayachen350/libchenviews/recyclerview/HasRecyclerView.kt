@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews
+package io.github.mayachen350.libchenviews.recyclerview
 
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView

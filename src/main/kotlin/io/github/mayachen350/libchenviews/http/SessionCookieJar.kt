@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews
+package io.github.mayachen350.libchenviews.http
 
 import okhttp3.Cookie
 import okhttp3.CookieJar

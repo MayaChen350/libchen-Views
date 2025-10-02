@@ -1,4 +1,4 @@
-package io.github.mayachen350.libchenviews
+package io.github.mayachen350.libchenviews.activity
 
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
