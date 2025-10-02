@@ -12,11 +12,10 @@ import androidx.viewbinding.ViewBinding
 import ca.cegepmontpetit.cem6222816.tp3_4n6.AccueilActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.ConnexionActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.CreationActivity
-import ca.cegepmontpetit.cem6222816.tp3_4n6.R
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.PersistentSessionData
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.RetrofitUtil
 import io.github.mayachen350.libchenviews.utils.DefaultCallback
-import ca.cegepmontpetit.cem6222816.tp3_4n6.utils.httpRequestWithLoading
+import io.github.mayachen350.libchenviews.utils.httpRequestWithLoading
 import com.google.android.material.navigation.NavigationView
 import retrofit2.Call
 import retrofit2.Response

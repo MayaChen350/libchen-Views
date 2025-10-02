@@ -4,21 +4,40 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/** A pretty simple and minimal callback for Retrofit. **/
 open class DefaultCallback<T> : Callback<T> {
+    /** This method groups both the successful and failed outcome.
+     * To manage what happens if the response is successful or or if it fails, other methods of the class can be overridden.
+     *
+     * @see onSuccessfulResponse
+     * @see onFailedResponse
+     * @
+     */
     final override fun onResponse(call: Call<T>, response: Response<T>) {
         if (response.isSuccessful) {
-            println(response.body())
             onSuccessfulResponse(call, response)
-        } else
-            println(response.code())
-            onSuccessfulResponse(call, response)
+        } else {
+            onFailedResponse(call, response)
+        }
     }
 
-    override fun onFailure(call: Call<T>, t: Throwable) {
+    open override fun onFailure(call: Call<T>, t: Throwable) {
         t.printStackTrace()
     }
 
-    open fun onSuccessfulResponse(call: Call<T>, response: Response<T>) {}
+    /** Defaults to printing the body of the response.
+     *
+     * @see onResponse
+     */
+    open fun onSuccessfulResponse(call: Call<T>, response: Response<T>) {
+        println(response.body())
+    }
 
-    open fun onFailedResponse(call: Call<T>, response: Response<T>) {}
+    /** Defaults to printing the status code of the response.
+     *
+     * @see onResponse
+     */
+    open fun onFailedResponse(call: Call<T>, response: Response<T>) {
+       println(response.code())
+    }
 }

@@ -1,7 +1,4 @@
-package ca.cegepmontpetit.cem6222816.tp3_4n6.utils
-
-/** Kind of pointer to a boolean.**/
-class BooleanWrapper(var value: Boolean)
+package io.github.mayachen350.libchenviews.utils
 
 /** Utility function for when validating data.
 

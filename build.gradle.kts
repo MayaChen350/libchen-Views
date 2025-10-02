@@ -43,9 +43,10 @@ group = "io.github.mayachen350"
 version = "1.0"
 
 dependencies {
-    implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("org.apache.commons:commons-lang3:3.17.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     testImplementation(kotlin("test"))
     implementation(kotlin("stdlib-jdk8"))
