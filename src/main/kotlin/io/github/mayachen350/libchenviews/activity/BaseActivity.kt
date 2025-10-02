@@ -6,13 +6,11 @@ import androidx.viewbinding.ViewBinding
 import com.google.android.material.snackbar.Snackbar
 import io.github.mayachen350.libchenviews.R
 
-abstract class BaseActivity<Binding : ViewBinding> : AppCompatActivity(), HasLoadingSnackbar {
+/** This is a kind of contract useful when making super classes, interfaces, helper objects etc which relies on the Activity's binding.
+ *
+ * It basically exposes the binding as well as an additional `isLoading` boolean.
+ */
+internal abstract class BaseActivity<Binding : ViewBinding> : AppCompatActivity() {
     var isLoading: Boolean = false
     protected lateinit var binding: Binding
-
-    override fun getLoadingSnackbar(contextView: View): Snackbar = Snackbar.make(
-        contextView,
-        getString(R.string.loading),
-        Snackbar.LENGTH_INDEFINITE
-    )
 }

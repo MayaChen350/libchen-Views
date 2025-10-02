@@ -14,7 +14,7 @@ import ca.cegepmontpetit.cem6222816.tp3_4n6.ConnexionActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.CreationActivity
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.PersistentSessionData
 import ca.cegepmontpetit.cem6222816.tp3_4n6.backend.RetrofitUtil
-import io.github.mayachen350.libchenviews.http.DefaultCallback
+import io.github.mayachen350.libchenviews.http.SimpleCallback
 import com.google.android.material.navigation.NavigationView
 import io.github.mayachen350.libchenviews.R
 import io.github.mayachen350.libchenviews.activity.BaseActivity
@@ -76,7 +76,7 @@ abstract class DrawerActivity<BINDING : ViewBinding> : BaseActivity<BINDING>(), 
                 R.id.deconnexion_item -> {
                     httpRequestWithLoading(findViewById(R.id.main)) { dismissSnackBar ->
                         RetrofitUtil.get().signOut().enqueue(
-                            object : DefaultCallback<String>() {
+                            object : SimpleCallback<String>() {
                                 override fun onSuccessfulResponse(
                                     call: Call<String>,
                                     response: Response<String>

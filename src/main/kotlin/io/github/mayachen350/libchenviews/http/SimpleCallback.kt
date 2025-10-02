@@ -5,7 +5,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 /** A pretty simple and minimal callback for Retrofit. **/
-open class DefaultCallback<T> : Callback<T> {
+open class SimpleCallback<T> : Callback<T> {
     /** This method groups both the successful and failed outcome.
      * To manage what happens if the response is successful or or if it fails, other methods of the class can be overridden.
      *
